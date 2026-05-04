@@ -7,6 +7,7 @@
     "city": "Shanghai",
     "venue": "Placeholder Arena",
     "coverImage": "08.png",
+    "featuredOnHome": true,
     "bilibiliUrl": "https://www.bilibili.com/",
     "note": "Starter entry for your archive. Replace with the real show, city, and Bilibili recording."
   },
@@ -18,6 +19,7 @@
     "city": "Hong Kong",
     "venue": "Harbour Stage",
     "coverImage": "08.png",
+    "featuredOnHome": true,
     "bilibiliUrl": "https://www.bilibili.com/",
     "note": "Use this slot for one of your recorded concerts and its own short memory."
   },

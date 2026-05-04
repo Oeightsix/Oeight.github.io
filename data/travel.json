@@ -41,6 +41,7 @@
       "longitude": 114.1772
     },
     "coverImage": "08.png",
+    "featuredOnHome": true,
     "summary": {
       "en": "A starter trip log about ferry light, harbour air, and slow walks through bright streets.",
       "zh": "一篇示例旅行日志，记录海风、渡轮、夜色与慢慢走过的街道。"
@@ -99,6 +100,7 @@
       "longitude": 139.6503
     },
     "coverImage": "08.png",
+    "featuredOnHome": true,
     "summary": {
       "en": "A sample route about city glow, record stores, and the slower corners inside a busy trip.",
       "zh": "一条示例路线，写城市灯光、唱片店，以及热闹旅行里那些更慢的角落。"

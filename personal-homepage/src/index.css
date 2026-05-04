@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Computer Modern Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Computer Modern Serif", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-latex: "Computer Modern Serif", serif;
+}
+
+body {
+  font-family: var(--font-latex);
+  @apply bg-[#fdfdfd] text-gray-900;
+}

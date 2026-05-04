@@ -2,18 +2,10 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Oeight | Personal Archive</title>
-  <meta
-    name="description"
-    content="A warm editorial personal website with concerts, travel logs, gallery moments, and now notes."
-  >
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
-  >
+  <meta name="description" content="Oeight 的个人档案站 — 演唱会、足迹、照片与日常碎片。">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css">
   <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body data-page="home" data-root="./">
@@ -23,101 +15,65 @@
         <span class="brand-mark">O</span>
         <span class="brand-copy">
           <strong>Oeight</strong>
-          <span>Personal Archive</span>
+          <span data-i18n="brand.sub">个人档案</span>
         </span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
+        <span></span><span></span>
       </button>
       <nav class="site-nav">
-        <a href="./index.html" data-nav="home">Home / 首页</a>
-        <a href="./concerts/index.html" data-nav="concerts">Concerts / 演唱会</a>
-        <a href="./travel/index.html" data-nav="travel">Travel / 足迹</a>
-        <a href="./now/index.html" data-nav="now">Now / 近况</a>
-        <a href="./gallery/index.html" data-nav="gallery">Gallery / 照片集</a>
+        <a href="./index.html" data-nav="home" data-i18n="nav.home">首页</a>
+        <a href="./concerts/index.html" data-nav="concerts" data-i18n="nav.concerts">演唱会</a>
+        <a href="./travel/index.html" data-nav="travel" data-i18n="nav.travel">足迹</a>
+        <a href="./now/index.html" data-nav="now" data-i18n="nav.now">近况</a>
+        <a href="./gallery/index.html" data-nav="gallery" data-i18n="nav.gallery">照片集</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero section-card hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Personal Website / 个人网站</p>
-          <h1 id="profile-name">Oeight</h1>
-          <p class="hero-tagline" id="profile-tagline">An archive of concerts, routes, and warm ordinary moments.</p>
-          <p class="hero-intro" id="profile-intro">
-            A warm little corner on the internet for concerts, maps, journals, and images.
-          </p>
-          <div class="link-row" id="profile-links"></div>
-          <div class="stat-grid" id="snapshot-grid"></div>
+    <main class="home-main cm-home">
+      <section class="cm-home-copy reveal" aria-labelledby="profile-name">
+        <p class="cm-kicker" data-i18n="home.hero.eyebrow">个人档案</p>
+        <h1 id="profile-name" class="home-display-name">Oeight</h1>
+        <p id="profile-home-intro" class="home-copy-block">等待确认的首页简介。</p>
+
+        <div class="link-row home-link-row" id="profile-links">
+          <a class="pill-link" href="#">GitHub</a>
+          <a class="pill-link" href="#">Bilibili</a>
+          <a class="pill-link" href="#">Email</a>
         </div>
-        <figure class="hero-figure">
-          <img src="./08.png" alt="Portrait" class="portrait-image">
-          <figcaption>
-            Main portrait / 主视觉
-          </figcaption>
-        </figure>
+
+        <section class="cm-section" aria-labelledby="home-education-heading">
+          <div class="cm-section-heading">
+            <p class="cm-kicker" id="home-education-heading" data-i18n="home.education.label">教育背景</p>
+            <h2>Education</h2>
+          </div>
+          <div class="home-education-grid cm-education-list" id="home-education-grid">
+            <article class="home-education-card is-placeholder">
+              <span class="home-education-period">TBD</span>
+              <strong class="home-education-school">待确认教育信息</strong>
+              <p class="home-education-meta">通过审核后会替换为正式内容。</p>
+            </article>
+          </div>
+        </section>
+
+        <nav class="cm-section-links" aria-label="Archive sections">
+          <a href="./concerts/index.html" data-i18n="nav.concerts">演唱会</a>
+          <a href="./travel/index.html" data-i18n="nav.travel">足迹</a>
+          <a href="./now/index.html" data-i18n="nav.now">近况</a>
+          <a href="./gallery/index.html" data-i18n="nav.gallery">照片集</a>
+        </nav>
       </section>
 
-      <section class="section-block">
-        <div class="section-heading">
-          <p class="eyebrow">Sections / 栏目</p>
-          <h2>Built like a personal archive, not a resume.</h2>
-        </div>
-        <div class="feature-grid">
-          <a class="feature-card" href="./concerts/index.html">
-            <span class="feature-kicker">Concerts / 演唱会</span>
-            <h3>Every live night deserves a page.</h3>
-            <p>Archive each show, each city, and each Bilibili recording in one place.</p>
-          </a>
-          <a class="feature-card" href="./travel/index.html">
-            <span class="feature-kicker">Travel / 足迹</span>
-            <h3>Maps for the places already touched.</h3>
-            <p>See visited regions on the overview map, then open route logs for each trip.</p>
-          </a>
-          <a class="feature-card" href="./now/index.html">
-            <span class="feature-kicker">Now / 近况</span>
-            <h3>A small stream of current thoughts.</h3>
-            <p>Recent listening, recent plans, and the tiny moments that shape a season.</p>
-          </a>
-          <a class="feature-card" href="./gallery/index.html">
-            <span class="feature-kicker">Gallery / 照片集</span>
-            <h3>Selected images grouped by mood.</h3>
-            <p>A themed gallery for visual fragments that sit outside of travel logs.</p>
-          </a>
-        </div>
-      </section>
-
-      <section class="section-block section-card">
-        <div class="section-heading">
-          <p class="eyebrow">Preview / 预览</p>
-          <h2>Recent glimpses from the archive</h2>
-        </div>
-        <div class="preview-grid">
-          <section>
-            <div class="preview-header">
-              <h3>Concerts</h3>
-              <a href="./concerts/index.html">Open archive</a>
-            </div>
-            <div id="home-concerts" class="stack-list"></div>
-          </section>
-          <section>
-            <div class="preview-header">
-              <h3>Now</h3>
-              <a href="./now/index.html">Open stream</a>
-            </div>
-            <div id="home-now" class="stack-list"></div>
-          </section>
-        </div>
-      </section>
+      <figure class="cm-portrait-panel reveal">
+        <img src="./08.png" alt="Oeight portrait" class="cm-portrait-image">
+        <figcaption>Oeight / Personal Archive</figcaption>
+      </figure>
     </main>
 
     <footer class="site-footer">
-      <p>Built for GitHub Pages. Lastingly personal, gently editable.</p>
       <p>&copy; <span data-current-year></span> Oeight</p>
     </footer>
   </div>
-
   <script type="module" src="./assets/js/app.js"></script>
 </body>
 </html>

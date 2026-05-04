@@ -8,6 +8,15 @@
     "en": "This site is built as a personal archive rather than a formal profile. It holds live music memories, travel routes, image fragments, and the little notes that feel too personal to lose.",
     "zh": "这里更像一座个人档案馆，而不是一张正式的简历。演唱会的现场、旅行的路线、零散的照片，以及那些不想遗失的小念头，都会慢慢放进来。"
   },
+  "home_intro": {
+    "en": "",
+    "zh": ""
+  },
+  "home_about_summary": {
+    "en": "",
+    "zh": ""
+  },
+  "education": [],
   "links": [
     {
       "label": "GitHub",

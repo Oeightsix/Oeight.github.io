@@ -4,13 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Concerts | Oeight</title>
-  <meta name="description" content="A concert archive with artist, city, notes, and Bilibili recordings.">
+  <meta name="description" content="演唱会档案 — 每一个现场夜晚。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
-  >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body data-page="concerts" data-root="../">
@@ -20,43 +17,40 @@
         <span class="brand-mark">O</span>
         <span class="brand-copy">
           <strong>Oeight</strong>
-          <span>Personal Archive</span>
+          <span data-i18n="brand.sub">个人档案</span>
         </span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
+        <span></span><span></span>
       </button>
       <nav class="site-nav">
-        <a href="../index.html" data-nav="home">Home / 首页</a>
-        <a href="./index.html" data-nav="concerts">Concerts / 演唱会</a>
-        <a href="../travel/index.html" data-nav="travel">Travel / 足迹</a>
-        <a href="../now/index.html" data-nav="now">Now / 近况</a>
-        <a href="../gallery/index.html" data-nav="gallery">Gallery / 照片集</a>
+        <a href="../index.html" data-nav="home" data-i18n="nav.home">首页</a>
+        <a href="./index.html" data-nav="concerts" data-i18n="nav.concerts">演唱会</a>
+        <a href="../travel/index.html" data-nav="travel" data-i18n="nav.travel">足迹</a>
+        <a href="../now/index.html" data-nav="now" data-i18n="nav.now">近况</a>
+        <a href="../gallery/index.html" data-nav="gallery" data-i18n="nav.gallery">照片集</a>
       </nav>
     </header>
 
     <main>
-      <section class="section-card page-hero narrow-hero">
-        <p class="eyebrow">Concert Archive / 演唱会档案</p>
-        <h1>Live nights, archived with links back to Bilibili.</h1>
-        <p>
-          A growing record of concerts, cities, notes, and recordings. Update the data file whenever a new show becomes part of your memory.
-        </p>
+      <section class="page-hero reveal">
+        <p class="eyebrow" data-i18n="concerts.eyebrow">演唱会档案</p>
+        <h1 data-i18n="concerts.title">每一个现场夜晚</h1>
+        <p data-i18n="concerts.desc">城市、场馆与 Bilibili 录像，一一记录在档。</p>
       </section>
 
-      <section class="section-card filter-panel">
+      <section class="filter-panel section-card reveal">
         <div class="filter-row">
           <label>
-            <span>Year / 年份</span>
+            <span data-i18n="concerts.filter.year">年份</span>
             <select id="concert-year-filter">
-              <option value="all">All years</option>
+              <option value="all" data-i18n="concerts.filter.all">全部</option>
             </select>
           </label>
           <label>
-            <span>Artist / 歌手</span>
+            <span data-i18n="concerts.filter.artist">歌手</span>
             <select id="concert-artist-filter">
-              <option value="all">All artists</option>
+              <option value="all" data-i18n="concerts.filter.all">全部</option>
             </select>
           </label>
         </div>
@@ -66,11 +60,9 @@
     </main>
 
     <footer class="site-footer">
-      <p>Concert links open in a new tab, ready for your Bilibili recordings.</p>
       <p>&copy; <span data-current-year></span> Oeight</p>
     </footer>
   </div>
-
   <script type="module" src="../assets/js/app.js"></script>
 </body>
 </html>

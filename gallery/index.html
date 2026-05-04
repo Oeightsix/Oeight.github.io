@@ -4,13 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery | Oeight</title>
-  <meta name="description" content="A themed image gallery for everyday, concert, and travel fragments.">
+  <meta name="description" content="照片集 — 按感觉分组的影像碎片。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
-  >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body data-page="gallery" data-root="../">
@@ -20,40 +17,35 @@
         <span class="brand-mark">O</span>
         <span class="brand-copy">
           <strong>Oeight</strong>
-          <span>Personal Archive</span>
+          <span data-i18n="brand.sub">个人档案</span>
         </span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
+        <span></span><span></span>
       </button>
       <nav class="site-nav">
-        <a href="../index.html" data-nav="home">Home / 首页</a>
-        <a href="../concerts/index.html" data-nav="concerts">Concerts / 演唱会</a>
-        <a href="../travel/index.html" data-nav="travel">Travel / 足迹</a>
-        <a href="../now/index.html" data-nav="now">Now / 近况</a>
-        <a href="./index.html" data-nav="gallery">Gallery / 照片集</a>
+        <a href="../index.html" data-nav="home" data-i18n="nav.home">首页</a>
+        <a href="../concerts/index.html" data-nav="concerts" data-i18n="nav.concerts">演唱会</a>
+        <a href="../travel/index.html" data-nav="travel" data-i18n="nav.travel">足迹</a>
+        <a href="../now/index.html" data-nav="now" data-i18n="nav.now">近况</a>
+        <a href="./index.html" data-nav="gallery" data-i18n="nav.gallery">照片集</a>
       </nav>
     </header>
 
     <main>
-      <section class="section-card page-hero narrow-hero">
-        <p class="eyebrow">Gallery / 照片集</p>
-        <h1>Grouped by feeling, not trapped in a timeline.</h1>
-        <p>
-          Use themes to hold images that belong together. This keeps the gallery distinct from travel logs while still feeling deeply personal.
-        </p>
+      <section class="page-hero reveal">
+        <p class="eyebrow" data-i18n="gallery.eyebrow">照片集</p>
+        <h1 data-i18n="gallery.title">照片集</h1>
+        <p data-i18n="gallery.desc">按感觉分组的影像碎片，而非按时间线。</p>
       </section>
 
-      <section id="gallery-groups" class="gallery-groups"></section>
+      <section id="gallery-groups" class="gallery-groups reveal"></section>
     </main>
 
     <footer class="site-footer">
-      <p>Tap any image to open the lightbox viewer.</p>
       <p>&copy; <span data-current-year></span> Oeight</p>
     </footer>
   </div>
-
   <script type="module" src="../assets/js/app.js"></script>
 </body>
 </html>

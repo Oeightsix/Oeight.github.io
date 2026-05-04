@@ -4,13 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Now | Oeight</title>
-  <meta name="description" content="A small timestamped stream of what is happening now.">
+  <meta name="description" content="近况流 — 当下的碎片和想法。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
-  >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body data-page="now" data-root="../">
@@ -20,40 +17,35 @@
         <span class="brand-mark">O</span>
         <span class="brand-copy">
           <strong>Oeight</strong>
-          <span>Personal Archive</span>
+          <span data-i18n="brand.sub">个人档案</span>
         </span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
+        <span></span><span></span>
       </button>
       <nav class="site-nav">
-        <a href="../index.html" data-nav="home">Home / 首页</a>
-        <a href="../concerts/index.html" data-nav="concerts">Concerts / 演唱会</a>
-        <a href="../travel/index.html" data-nav="travel">Travel / 足迹</a>
-        <a href="./index.html" data-nav="now">Now / 近况</a>
-        <a href="../gallery/index.html" data-nav="gallery">Gallery / 照片集</a>
+        <a href="../index.html" data-nav="home" data-i18n="nav.home">首页</a>
+        <a href="../concerts/index.html" data-nav="concerts" data-i18n="nav.concerts">演唱会</a>
+        <a href="../travel/index.html" data-nav="travel" data-i18n="nav.travel">足迹</a>
+        <a href="./index.html" data-nav="now" data-i18n="nav.now">近况</a>
+        <a href="../gallery/index.html" data-nav="gallery" data-i18n="nav.gallery">照片集</a>
       </nav>
     </header>
 
     <main>
-      <section class="section-card page-hero narrow-hero">
-        <p class="eyebrow">Now Stream / 近况流</p>
-        <h1>Timestamped notes instead of full blog posts.</h1>
-        <p>
-          This section is for current listening, current plans, and the fleeting details that belong to a season rather than a polished article.
-        </p>
+      <section class="page-hero reveal">
+        <p class="eyebrow" data-i18n="now.eyebrow">近况流</p>
+        <h1 data-i18n="now.title">此刻</h1>
+        <p data-i18n="now.desc">以时间戳记录，而不是精心打磨的文章。</p>
       </section>
 
-      <section id="now-stream" class="timeline-list"></section>
+      <section id="now-stream" class="timeline-list reveal"></section>
     </main>
 
     <footer class="site-footer">
-      <p>Keep it lightweight: one small entry at a time.</p>
       <p>&copy; <span data-current-year></span> Oeight</p>
     </footer>
   </div>
-
   <script type="module" src="../assets/js/app.js"></script>
 </body>
 </html>
