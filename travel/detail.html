@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Detail | Oeight</title>
+  <meta name="description" content="Detailed travel log with route map, notes, and gallery.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+  >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body data-page="travel-detail" data-root="../">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="Homepage">
+        <span class="brand-mark">O</span>
+        <span class="brand-copy">
+          <strong>Oeight</strong>
+          <span>Personal Archive</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="../index.html" data-nav="home">Home / 首页</a>
+        <a href="../concerts/index.html" data-nav="concerts">Concerts / 演唱会</a>
+        <a href="./index.html" data-nav="travel">Travel / 足迹</a>
+        <a href="../now/index.html" data-nav="now">Now / 近况</a>
+        <a href="../gallery/index.html" data-nav="gallery">Gallery / 照片集</a>
+      </nav>
+    </header>
+
+    <main id="travel-detail-page" class="travel-detail-page">
+      <section class="section-card detail-hero">
+        <div class="detail-copy">
+          <p class="eyebrow" id="travel-detail-kicker">Travel Log / 旅行日志</p>
+          <h1 id="travel-detail-title">Loading trip...</h1>
+          <p class="detail-summary" id="travel-detail-summary"></p>
+          <div class="meta-chip-row" id="travel-detail-meta"></div>
+        </div>
+        <figure class="detail-figure">
+          <img id="travel-detail-cover" src="../08.png" alt="Travel cover">
+        </figure>
+      </section>
+
+      <section class="detail-grid">
+        <article class="section-card prose-card">
+          <div class="section-heading">
+            <p class="eyebrow">Journal / 日志</p>
+            <h2>Words from the trip</h2>
+          </div>
+          <div id="travel-detail-body" class="prose"></div>
+        </article>
+
+        <aside class="detail-sidebar">
+          <section class="section-card">
+            <div class="section-heading">
+              <p class="eyebrow">Route / 路线</p>
+              <h2>Trip map</h2>
+            </div>
+            <div id="travel-route-map" class="map-frame map-route" aria-label="Trip route map"></div>
+            <ol id="travel-route-list" class="route-list"></ol>
+          </section>
+        </aside>
+      </section>
+
+      <section class="section-card">
+        <div class="section-heading">
+          <p class="eyebrow">Gallery / 图集</p>
+          <h2>Images from the journey</h2>
+        </div>
+        <div id="travel-detail-gallery" class="gallery-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Each travel detail page is rendered from `JSON + Markdown`.</p>
+      <p>&copy; <span data-current-year></span> Oeight</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script type="module" src="../assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "Oeight",
+  "tagline": {
+    "en": "An archive of concerts, routes, and warm ordinary moments.",
+    "zh": "把演唱会、足迹与温柔日常慢慢收集起来。"
+  },
+  "intro": {
+    "en": "This site is built as a personal archive rather than a formal profile. It holds live music memories, travel routes, image fragments, and the little notes that feel too personal to lose.",
+    "zh": "这里更像一座个人档案馆，而不是一张正式的简历。演唱会的现场、旅行的路线、零散的照片，以及那些不想遗失的小念头，都会慢慢放进来。"
+  },
+  "links": [
+    {
+      "label": "GitHub",
+      "labelZh": "代码",
+      "url": "https://github.com/your-handle",
+      "external": true
+    },
+    {
+      "label": "Bilibili",
+      "labelZh": "视频",
+      "url": "https://space.bilibili.com/your-id",
+      "external": true
+    },
+    {
+      "label": "Email",
+      "labelZh": "邮箱",
+      "url": "mailto:hello@example.com",
+      "external": false
+    }
+  ]
+}

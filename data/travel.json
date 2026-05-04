@@ -1,0 +1,118 @@
+[
+  {
+    "slug": "hong-kong-harbour-notes",
+    "title": {
+      "en": "Hong Kong Harbour Notes",
+      "zh": "香港海边随记"
+    },
+    "dateRange": {
+      "start": "2025-02-16",
+      "end": "2025-02-19",
+      "label": "16 Feb 2025 - 19 Feb 2025"
+    },
+    "countries": [
+      {
+        "code": "HK",
+        "name": "Hong Kong"
+      }
+    ],
+    "routeCities": [
+      {
+        "name": "Central",
+        "latitude": 22.2819,
+        "longitude": 114.1589,
+        "note": "Ferried in with an evening skyline and sea wind."
+      },
+      {
+        "name": "Tsim Sha Tsui",
+        "latitude": 22.2964,
+        "longitude": 114.1722,
+        "note": "Walked the harbourfront slowly and stayed until the lights settled."
+      },
+      {
+        "name": "Mong Kok",
+        "latitude": 22.3193,
+        "longitude": 114.1694,
+        "note": "Night market textures, bright signs, and pockets full of small memories."
+      }
+    ],
+    "coordinates": {
+      "latitude": 22.3027,
+      "longitude": 114.1772
+    },
+    "coverImage": "08.png",
+    "summary": {
+      "en": "A starter trip log about ferry light, harbour air, and slow walks through bright streets.",
+      "zh": "一篇示例旅行日志，记录海风、渡轮、夜色与慢慢走过的街道。"
+    },
+    "gallery": [
+      {
+        "image": "08.png",
+        "caption": "Harbour light and portrait warmth."
+      },
+      {
+        "image": "08.png",
+        "caption": "A repeated placeholder image until the real trip gallery is ready."
+      }
+    ],
+    "markdownPath": "content/travel/hong-kong-harbour-notes.md"
+  },
+  {
+    "slug": "tokyo-lights-and-vinyl",
+    "title": {
+      "en": "Tokyo Lights and Vinyl",
+      "zh": "东京灯影与黑胶"
+    },
+    "dateRange": {
+      "start": "2024-11-06",
+      "end": "2024-11-11",
+      "label": "06 Nov 2024 - 11 Nov 2024"
+    },
+    "countries": [
+      {
+        "code": "JP",
+        "name": "Japan"
+      }
+    ],
+    "routeCities": [
+      {
+        "name": "Shinjuku",
+        "latitude": 35.6938,
+        "longitude": 139.7034,
+        "note": "Started among neon density and late-night station rhythms."
+      },
+      {
+        "name": "Shimokitazawa",
+        "latitude": 35.6617,
+        "longitude": 139.6687,
+        "note": "Spent the afternoon with records, cafes, and quiet side streets."
+      },
+      {
+        "name": "Asakusa",
+        "latitude": 35.7148,
+        "longitude": 139.7967,
+        "note": "Closed the trip with temple bells and softer morning light."
+      }
+    ],
+    "coordinates": {
+      "latitude": 35.6762,
+      "longitude": 139.6503
+    },
+    "coverImage": "08.png",
+    "summary": {
+      "en": "A sample route about city glow, record stores, and the slower corners inside a busy trip.",
+      "zh": "一条示例路线，写城市灯光、唱片店，以及热闹旅行里那些更慢的角落。"
+    },
+    "gallery": [
+      {
+        "image": "08.png",
+        "caption": "Use this placeholder until you add trip-specific images."
+      },
+      {
+        "image": "08.png",
+        "caption": "Gallery items can later point to unique photos for each stop."
+      }
+    ],
+    "markdownPath": "content/travel/tokyo-lights-and-vinyl.md"
+  }
+]

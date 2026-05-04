@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel | Oeight</title>
+  <meta name="description" content="Visited regions overview and individual travel logs with route maps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+  >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.7.0/dist/jsvectormap.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body data-page="travel" data-root="../">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="Homepage">
+        <span class="brand-mark">O</span>
+        <span class="brand-copy">
+          <strong>Oeight</strong>
+          <span>Personal Archive</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="../index.html" data-nav="home">Home / 首页</a>
+        <a href="../concerts/index.html" data-nav="concerts">Concerts / 演唱会</a>
+        <a href="./index.html" data-nav="travel">Travel / 足迹</a>
+        <a href="../now/index.html" data-nav="now">Now / 近况</a>
+        <a href="../gallery/index.html" data-nav="gallery">Gallery / 照片集</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-card page-hero">
+        <div>
+          <p class="eyebrow">Travel Logs / 足迹日志</p>
+          <h1>A world view first, then each trip in detail.</h1>
+          <p>
+            The overview map highlights the countries and regions already visited. Each trip page adds a route map, short writing, and a gallery of images.
+          </p>
+        </div>
+        <div class="stats-inline" id="travel-stats"></div>
+      </section>
+
+      <section class="section-card">
+        <div class="section-heading">
+          <p class="eyebrow">Overview Map / 总览地图</p>
+          <h2>Visited countries and regions</h2>
+        </div>
+        <div id="travel-map" class="map-frame map-overview" aria-label="Visited countries overview map"></div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Trips / 旅行条目</p>
+          <h2>Open a trip to see routes, writing, and images.</h2>
+        </div>
+        <div id="travel-grid" class="card-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Update `data/travel.json` and `content/travel/*.md` to add new trips.</p>
+      <p>&copy; <span data-current-year></span> Oeight</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.7.0/dist/jsvectormap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.7.0/dist/maps/world.js"></script>
+  <script type="module" src="../assets/js/app.js"></script>
+</body>
+</html>

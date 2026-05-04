@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concerts | Oeight</title>
+  <meta name="description" content="A concert archive with artist, city, notes, and Bilibili recordings.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+  >
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body data-page="concerts" data-root="../">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="Homepage">
+        <span class="brand-mark">O</span>
+        <span class="brand-copy">
+          <strong>Oeight</strong>
+          <span>Personal Archive</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="../index.html" data-nav="home">Home / 首页</a>
+        <a href="./index.html" data-nav="concerts">Concerts / 演唱会</a>
+        <a href="../travel/index.html" data-nav="travel">Travel / 足迹</a>
+        <a href="../now/index.html" data-nav="now">Now / 近况</a>
+        <a href="../gallery/index.html" data-nav="gallery">Gallery / 照片集</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-card page-hero narrow-hero">
+        <p class="eyebrow">Concert Archive / 演唱会档案</p>
+        <h1>Live nights, archived with links back to Bilibili.</h1>
+        <p>
+          A growing record of concerts, cities, notes, and recordings. Update the data file whenever a new show becomes part of your memory.
+        </p>
+      </section>
+
+      <section class="section-card filter-panel">
+        <div class="filter-row">
+          <label>
+            <span>Year / 年份</span>
+            <select id="concert-year-filter">
+              <option value="all">All years</option>
+            </select>
+          </label>
+          <label>
+            <span>Artist / 歌手</span>
+            <select id="concert-artist-filter">
+              <option value="all">All artists</option>
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <section id="concerts-grid" class="card-grid"></section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Concert links open in a new tab, ready for your Bilibili recordings.</p>
+      <p>&copy; <span data-current-year></span> Oeight</p>
+    </footer>
+  </div>
+
+  <script type="module" src="../assets/js/app.js"></script>
+</body>
+</html>

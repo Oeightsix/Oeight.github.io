@@ -1,0 +1,47 @@
+[
+  {
+    "labelEn": "Cities",
+    "labelZh": "城市",
+    "title": "City warmth and passing light",
+    "description": "A themed group for streets, coastlines, architecture, and the kinds of images that feel like weather inside memory.",
+    "items": [
+      {
+        "image": "08.png",
+        "caption": "Starter image for city-toned moments."
+      },
+      {
+        "image": "08.png",
+        "caption": "Swap in your own city photographs here."
+      }
+    ]
+  },
+  {
+    "labelEn": "Concerts",
+    "labelZh": "演唱会",
+    "title": "Frames that still sound loud",
+    "description": "A visual companion to the concert archive, meant for atmosphere rather than metadata.",
+    "items": [
+      {
+        "image": "08.png",
+        "caption": "Placeholder for a stage light memory.",
+        "relatedLink": {
+          "label": "See concert archive",
+          "url": "concerts/index.html",
+          "external": false
+        }
+      }
+    ]
+  },
+  {
+    "labelEn": "Daily",
+    "labelZh": "日常",
+    "title": "Daily fragments worth keeping",
+    "description": "Small images that do not need a full story to deserve a place on the site.",
+    "items": [
+      {
+        "image": "08.png",
+        "caption": "A placeholder image until the first daily set is ready."
+      }
+    ]
+  }
+]

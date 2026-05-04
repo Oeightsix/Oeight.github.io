@@ -1,0 +1,35 @@
+[
+  {
+    "slug": "placeholder-live-tour-2025",
+    "artist": "Artist Name",
+    "event": "Live Tour 2025",
+    "date": "2025-10-18",
+    "city": "Shanghai",
+    "venue": "Placeholder Arena",
+    "coverImage": "08.png",
+    "bilibiliUrl": "https://www.bilibili.com/",
+    "note": "Starter entry for your archive. Replace with the real show, city, and Bilibili recording."
+  },
+  {
+    "slug": "placeholder-acoustic-night-2024",
+    "artist": "Another Artist",
+    "event": "Acoustic Night",
+    "date": "2024-07-14",
+    "city": "Hong Kong",
+    "venue": "Harbour Stage",
+    "coverImage": "08.png",
+    "bilibiliUrl": "https://www.bilibili.com/",
+    "note": "Use this slot for one of your recorded concerts and its own short memory."
+  },
+  {
+    "slug": "placeholder-festival-2023",
+    "artist": "Festival Line-up",
+    "event": "Summer Festival",
+    "date": "2023-06-03",
+    "city": "Tokyo",
+    "venue": "Open Air Park",
+    "coverImage": "08.png",
+    "bilibiliUrl": "https://www.bilibili.com/",
+    "note": "You can keep notes very short or turn them into one-sentence emotional anchors."
+  }
+]
